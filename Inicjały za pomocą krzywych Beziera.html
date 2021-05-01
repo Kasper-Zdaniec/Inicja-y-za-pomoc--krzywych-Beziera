@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <style>
+        canvas {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
 <body>
 
-<canvas id="myCanvas" width="1000" height="1000" style="border:1px solid #d2d2d2;"></canvas>
+<canvas id="myCanvas" width="625" height="525" style="border:1px solid black;"></canvas>
 
 <script>
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
+    ctx.fillStyle = "black";
     ctx.beginPath();
     ctx.moveTo(217, 406);
     ctx.bezierCurveTo(210, 413, 151, 313, 150, 298);
@@ -36,7 +46,8 @@
     ctx.bezierCurveTo(322, 268, 322, 290, 322, 290);
     ctx.bezierCurveTo(346, 290, 371, 294, 388, 294);
     ctx.bezierCurveTo(398, 294, 339, 404, 329, 410);
-    ctx.stroke();
+    ctx.stroke()
+    ctx.fill();
 
 
 </script>
